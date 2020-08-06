@@ -8,6 +8,6 @@ setup(name='tfyolo',
 	packages=['tfyolo','tfyolo.core','tfyolo.data'],
 	include_package_data=True,
 	package_data={
-        "data": ["*.txt", "*.names"],
+        "tfyolo.data": ["*/*.txt", "*/*.names"],
     },
 )
