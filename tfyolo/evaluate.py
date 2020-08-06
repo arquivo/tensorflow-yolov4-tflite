@@ -5,10 +5,10 @@ import os
 import shutil
 import numpy as np
 import tensorflow as tf
-from core.yolov4 import filter_boxes
+from tfyolo.core.yolov4 import filter_boxes
 from tensorflow.python.saved_model import tag_constants
-import core.utils as utils
-from core.config import cfg
+import tfyolo.core.utils as utils
+from tfyolo.core.config import cfg
 
 flags.DEFINE_string('weights', './checkpoints/yolov4-416',
                     'path to weights file')

@@ -3,10 +3,10 @@ from absl import app, flags, logging
 from absl.flags import FLAGS
 import numpy as np
 import cv2
-from core.yolov4 import YOLOv4, YOLOv3, YOLOv3_tiny, decode
-import core.utils as utils
+from tfyolo.core.yolov4 import YOLOv4, YOLOv3, YOLOv3_tiny, decode
+import tfyolo.core.utils as utils
 import os
-from core.config import cfg
+from tfyolo.core.config import cfg
 
 flags.DEFINE_string('weights', './checkpoints/yolov4-416', 'path to weights file')
 flags.DEFINE_string('output', './checkpoints/yolov4-416-fp32.tflite', 'path to output')

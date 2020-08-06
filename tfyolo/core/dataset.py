@@ -6,8 +6,8 @@ import cv2
 import random
 import numpy as np
 import tensorflow as tf
-import core.utils as utils
-from core.config import cfg
+import tfyolo.core.utils as utils
+from tfyolo.core.config import cfg
 
 
 class Dataset(object):
